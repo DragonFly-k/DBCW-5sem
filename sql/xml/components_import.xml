@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ROWSET>
+  
+<ROW>
+ 
+    <NAME>matrix</NAME>
+    <PRICE>1500</PRICE>
+</ROW>
+ 
+<ROW>
+ 
+    <NAME>keyboard</NAME>
+    <PRICE>7010</PRICE>
+</ROW>
+ 
+<ROW>
+ 
+    <NAME>charge</NAME>
+    <PRICE>1000</PRICE>
+</ROW>
+ 
+</ROWSET>
+ 

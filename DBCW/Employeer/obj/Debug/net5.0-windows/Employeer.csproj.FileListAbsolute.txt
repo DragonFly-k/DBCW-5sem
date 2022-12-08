@@ -1,0 +1,118 @@
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\DBCW.deps.json
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\DBCW.exe
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.exe
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.deps.json
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.json
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.dev.json
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\ref\Employeer.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.pdb
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\DBCW.dll
+D:\3c2s\DBCW\Employeer\bin\Debug\net5.0-windows\DBCW.pdb
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csprojAssemblyReference.cache
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.Form1.resources
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.GenerateResource.cache
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.GeneratedMSBuildEditorConfig.editorconfig
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfoInputs.cache
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfo.cs
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CoreCompileInputs.cache
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CopyComplete
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.dll
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\ref\Employeer.dll
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.pdb
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.genruntimeconfig.cache
+D:\3c2s\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.EmployeeForm.resources
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.deps.json
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.exe
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.exe
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.deps.json
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.json
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.dev.json
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.pdb
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.dll
+D:\универ\теория\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.pdb
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.AssemblyReference.cache
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.EmployeeForm.resources
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.Form1.resources
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.GenerateResource.cache
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.GeneratedMSBuildEditorConfig.editorconfig
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfoInputs.cache
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfo.cs
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CoreCompileInputs.cache
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CopyComplete
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.dll
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\refint\Employeer.dll
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.pdb
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.genruntimeconfig.cache
+D:\универ\теория\db_coursework-main\Employeer\obj\Debug\net5.0-windows\ref\Employeer.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.deps.json
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.exe
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.exe
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.deps.json
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.json
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.dev.json
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Employeer.pdb
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\bin\Debug\net5.0-windows\DBCW.pdb
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.EmployeeForm.resources
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.Form1.resources
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.GenerateResource.cache
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfo.cs
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CopyComplete
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\refint\Employeer.dll
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.pdb
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\Employeer.genruntimeconfig.cache
+C:\Users\User\Desktop\db_coursework-main\Employeer\obj\Debug\net5.0-windows\ref\Employeer.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\refint\Employeer.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.pdb
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.exe
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.deps.json
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.json
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.runtimeconfig.dev.json
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Employeer.pdb
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.AssemblyReference.cache
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.EmployeeForm.resources
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.Form1.resources
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.GenerateResource.cache
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.GeneratedMSBuildEditorConfig.editorconfig
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfoInputs.cache
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfo.cs
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CoreCompileInputs.cache
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CopyComplete
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.genruntimeconfig.cache
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\ref\Employeer.dll

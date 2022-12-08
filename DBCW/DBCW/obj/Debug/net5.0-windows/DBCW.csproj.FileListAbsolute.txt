@@ -1,0 +1,100 @@
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.exe
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.deps.json
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.dll
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\ref\DBCW.dll
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.pdb
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csprojAssemblyReference.cache
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.Form1.resources
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.GenerateResource.cache
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.GeneratedMSBuildEditorConfig.editorconfig
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfoInputs.cache
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfo.cs
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CoreCompileInputs.cache
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CopyComplete
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.dll
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\ref\DBCW.dll
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.pdb
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.genruntimeconfig.cache
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\3c2s\DBCW\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\3c2s\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.ClientForm.resources
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.exe
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.deps.json
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.dll
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.pdb
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\универ\теория\db_coursework-main\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.AssemblyReference.cache
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.ClientForm.resources
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.Form1.resources
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.GenerateResource.cache
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.GeneratedMSBuildEditorConfig.editorconfig
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfoInputs.cache
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfo.cs
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CoreCompileInputs.cache
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CopyComplete
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.dll
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\refint\DBCW.dll
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.pdb
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.genruntimeconfig.cache
+D:\универ\теория\db_coursework-main\DBCW\obj\Debug\net5.0-windows\ref\DBCW.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.exe
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.deps.json
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\DBCW.pdb
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.ClientForm.resources
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.Form1.resources
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.GenerateResource.cache
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfo.cs
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CopyComplete
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\refint\DBCW.dll
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.pdb
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\DBCW.genruntimeconfig.cache
+C:\Users\User\Desktop\db_coursework-main\DBCW\obj\Debug\net5.0-windows\ref\DBCW.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.exe
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.deps.json
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.json
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.runtimeconfig.dev.json
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\DBCW.pdb
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\Oracle.ManagedDataAccess.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\System.DirectoryServices.Protocols.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.AssemblyReference.cache
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\Client.ClientForm.resources
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\Client.Form1.resources
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.GenerateResource.cache
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.GeneratedMSBuildEditorConfig.editorconfig
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfoInputs.cache
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfo.cs
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CoreCompileInputs.cache
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.CopyComplete
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\refint\DBCW.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.pdb
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.genruntimeconfig.cache
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\ref\DBCW.dll

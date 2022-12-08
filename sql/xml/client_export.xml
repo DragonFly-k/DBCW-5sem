@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<ROWSET>
+  
+<ROW>
+
+    <ID_CLIENT>1</ID_CLIENT>
+
+    <FULLNAME>Syatkovskaya Katsiaryna Dmitrievna</FULLNAME>
+
+    <ADRESS>Prushinskih, 34</ADRESS>
+
+    <PHONENUMBER>+375297631738</PHONENUMBER>
+
+    <LOGIN>SedSedSed</LOGIN>
+
+    <PASSW>Password1</PASSW>
+
+</ROW>
+
+</ROWSET>
