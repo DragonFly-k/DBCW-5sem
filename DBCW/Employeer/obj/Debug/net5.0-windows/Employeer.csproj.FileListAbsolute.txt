@@ -107,7 +107,6 @@ D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5
 D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.AssemblyReference.cache
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.EmployeeForm.resources
-D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.Form1.resources
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.GenerateResource.cache
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.GeneratedMSBuildEditorConfig.editorconfig
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfoInputs.cache
@@ -116,3 +115,6 @@ D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.CopyComplete
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.genruntimeconfig.cache
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\ref\Employeer.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.EAuth.resources
+D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\MaterialSkin.dll
+D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.EForm.resources

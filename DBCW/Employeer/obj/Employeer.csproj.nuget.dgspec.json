@@ -40,9 +40,21 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "MaterialSkin": {
+              "target": "Package",
+              "version": "[0.2.1, )"
+            },
+            "MaterialSkin.Updated": {
+              "target": "Package",
+              "version": "[0.2.2, )"
+            },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
               "version": "[3.21.1, )"
+            },
+            "materialskin.2": {
+              "target": "Package",
+              "version": "[2.3.1, )"
             }
           },
           "imports": [

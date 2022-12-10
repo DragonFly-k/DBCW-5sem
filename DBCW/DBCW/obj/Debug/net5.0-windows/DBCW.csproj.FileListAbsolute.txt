@@ -85,8 +85,6 @@ D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-wi
 D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
 D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.AssemblyReference.cache
-D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\Client.ClientForm.resources
-D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\Client.Form1.resources
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.csproj.GenerateResource.cache
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.GeneratedMSBuildEditorConfig.editorconfig
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.AssemblyInfoInputs.cache
@@ -98,3 +96,6 @@ D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-wi
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.pdb
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\DBCW.genruntimeconfig.cache
 D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\ref\DBCW.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\bin\Debug\net5.0-windows\MaterialSkin.dll
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\Client.Auth.resources
+D:\универ\бд\Курсовой проект\DBCW\DBCW\obj\Debug\net5.0-windows\Client.CForm.resources
