@@ -2,6 +2,7 @@ create or replace package cwClient
 as
 procedure addClient(fullName nvarchar2, Adress nvarchar2, PhoneNumber nvarchar2, Login nvarchar2, Passw nvarchar2);
 procedure getCountOfClientWithSameLogin(checklogin nvarchar2, results OUT number);
+procedure getCountOfClientWithSamePhone(checkphone nvarchar2, results OUT number);
 procedure checkClientAccount(lg nvarchar2, ps nvarchar2, results out number);
 procedure getClienIdAndName(lgin nvarchar2, psd nvarchar2, id_ret out number, fio out nvarchar2);
 procedure getNameAndIdEmp(p_cursor IN OUT NOCOPY SYS_REFCURSOR); 
@@ -16,15 +17,22 @@ create or replace package body cwClient
 as 
 procedure addClient(fullName nvarchar2, Adress nvarchar2, PhoneNumber nvarchar2, Login nvarchar2, Passw nvarchar2)
 as 
+sl number;
+sp number;
 begin
-insert into Client(fullname, adress,phonenumber, login, passw) values(fullName, Adress, PhoneNumber, Login, encryption_password(Passw));
-commit;
+cwclient.getcountofclientwithsamelogin(Login,sl);
+cwclient.getcountofclientwithsamephone(PhoneNumber,sp);
+if (sl=0 and sp =0) then
+ insert into Client(fullname, adress,phonenumber, login, passw) values(fullName, Adress, PhoneNumber, Login, encryption_password(Passw));
+ commit;
+else raise_application_error(-20000,'account already exist');
+end if;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end addClient ;
 
-procedure getCountOfClientWithSameLogin(checklogin nvarchar2, results OUT number)
+procedure getCountOfClientWithSameLogin(checklogin nvarchar2, results out number)
 as 
 begin 
 results:=0;
@@ -33,6 +41,16 @@ exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end getCountOfClientWithSameLogin;
+
+procedure getCountOfClientWithSamePhone(checkphone nvarchar2, results out number)
+as 
+begin 
+results:=0;
+select count(*) into results from Client where phonenumber=checkphone;
+exception
+when others then
+raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
+end getCountOfClientWithSamephone;
 
 procedure checkClientAccount(lg nvarchar2, ps nvarchar2, results out number)
 as 
@@ -47,17 +65,17 @@ end checkClientAccount;
 procedure getClienIdAndName(lgin nvarchar2, psd nvarchar2, id_ret out number, fio out nvarchar2)
 as 
 begin
-select Id_Client  into id_ret from Client where Login=lgin and decryption_password(Passw)=psd;
+select Id_Client into id_ret from Client where Login=lgin and decryption_password(Passw)=psd;
 select FullName into fio from Client where Login=lgin and decryption_password(Passw)=psd;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end getClienIdAndName;
 
-procedure getNameAndIdEmp(p_cursor IN OUT NOCOPY SYS_REFCURSOR)
+procedure getNameAndIdEmp(p_cursor in out nocopy SYS_REFCURSOR)
 as  
 begin
-OPEN p_cursor FOR 
+open p_cursor for
 select Id_emp, fullName  from employee;
 end getNameAndIdEmp; 
 
@@ -88,10 +106,10 @@ when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end makeOrder;
 
-procedure showCurrentClientOrders(cl_id number, p_cursor IN OUT NOCOPY SYS_REFCURSOR)
+procedure showCurrentClientOrders(cl_id number, p_cursor in out nocopy SYS_REFCURSOR)
 as 
 begin
-OPEN p_cursor FOR 
+open p_cursor for
 select distinct Corder.id_or, corder.orderdate as Дата_Заказа, equipment.ename as Наименование_оборудования, 
   Employee.FULLNAME as Имя_исполнителя, OrderStatus.statusname as Статус_заказа
 from Corder
@@ -105,10 +123,10 @@ when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end showCurrentClientOrders;
 
-procedure showHistoryClientOrders(cl_id number, p_cursor IN OUT NOCOPY SYS_REFCURSOR)
+procedure showHistoryClientOrders(cl_id number, p_cursor in out nocopy SYS_REFCURSOR)
 as
 begin
-OPEN p_cursor FOR 
+open p_cursor for
 select distinct Corder.id_or, corder.orderdate as Дата_Заказа, equipment.ename as Наименование_оборудования, 
 Employee.FULLNAME as Имя_исполнителя, OrderStatus.statusname as Статус_заказа, makers.COSTS as Стоимость
 from Corder
@@ -129,8 +147,7 @@ end cwClient;
 SET SERVEROUTPUT ON;
 
 begin
-cwClient.addclient('Syatkovskaya Katsiaryna Dmitrievna', 'Prushinskih, 34', '+375297631738', 'SedSedSed','Password1');
-cwClient.addclient('Syatkovskaya Katsiaryna Dmitrievna', 'Prushinskih, 34', '+375297631738', 'Sed','Pass');
+cwClient.addclient('Syatkovskaya Katsiaryna Dmitrievna', 'Prushinskih, 34', '375297631738', 'Sed','Sed');
 end;
 
 declare
@@ -142,8 +159,8 @@ end;
 
 declare
 ct3 number;
-BEGIN
-cwClient.checkClientAccount('SedSedSed', 'Password1',ct3);
+begin
+cwClient.checkClientAccount('Sed', 'Sed',ct3);
 dbms_output.put_line('count = '||ct3);
 end;
 
@@ -151,14 +168,14 @@ declare
 fio nvarchar2(50);
 idd number;
 begin
-cwClient.getClienIdAndName('Sed','Pass', idd, fio);
+cwClient.getClienIdAndName('Sed','Sed', idd, fio);
 dbms_output.put_line('id = '||idd||' fio '|| fio);
 end;
 
 declare
 cur sys_refcursor;
-TYPE zz1  IS RECORD(Id_emp number, fullName nvarchar2(50));  
-zz zz1; 
+type em is record(Id_emp number, fullName nvarchar2(50));  
+zz em; 
 begin  
 cwClient.getNameAndIdEmp(cur);
   loop
@@ -171,11 +188,11 @@ end if;
 end;
 
 begin
-cwClient.addEquipment('xxxx', '123123','toruble', 1, 'model');
+cwClient.addEquipment('xxxx', '123123','toruble', 5, 'model');
 end;
 
 begin
-cwClient.makeOrder(1,1,1,1,'10.11.2022');
+cwClient.makeOrder(1,3,5,1,'10.11.2022');
 end;
 
 declare
@@ -187,10 +204,10 @@ end;
 
 declare 
 cur sys_refcursor;
-TYPE zz1  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), FULLNAME nvarchar2(150), statusname nvarchar2(150));  -- обязательно надо определить, куда фетчим, это самый скользкий момент
-zz zz1;
+TYPE eqp IS RECORD(id_or number, orderdate date, ename nvarchar2(150), FULLNAME nvarchar2(150), statusname nvarchar2(150)); 
+zz eqp;
 begin
-cwClient.showCurrentClientOrders(1, cur);
+cwClient.showCurrentClientOrders(3, cur);
   loop
     fetch cur into zz;
     EXIT when cur%notfound;
@@ -202,10 +219,10 @@ end;
 
 declare 
 cur sys_refcursor;
-TYPE zz1  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), FULLNAME nvarchar2(150), statusname nvarchar2(150), costs number);  
-zz zz1;
+TYPE eqp  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), FULLNAME nvarchar2(150), statusname nvarchar2(150), costs number);  
+zz eqp;
 begin
-cwClient.showHistoryClientOrders(1, cur);
+cwClient.showHistoryClientOrders(3, cur);
   loop
     fetch cur into zz;
     EXIT when cur%notfound;

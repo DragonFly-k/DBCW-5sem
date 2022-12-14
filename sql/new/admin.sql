@@ -3,8 +3,7 @@ as
 procedure showAllClients;
 procedure addVacancy(vacName nvarchar2);
 procedure showAllVacancy;
-procedure addEmp(fullName nvarchar2, Id_vac  number, PassportSeria nvarchar2, PassportNumber nvarchar2,  Adress nvarchar2,
-                PhoneNumber nvarchar2, StartWorkDate date,  Login nvarchar2, Passw nvarchar2);
+procedure addEmp(fullName nvarchar2, Id_vac  number, PSeria nvarchar2, PNumber nvarchar2,  Adress nvarchar2,PhoneN nvarchar2, StartWorkDate date,  Logi nvarchar2, Passw nvarchar2);
 procedure showAllEmp;
 procedure addStatus(stName nvarchar2);
 procedure showAllOrderStatus;
@@ -31,8 +30,14 @@ end showAllClients ;
 
 procedure addVacancy(vacName nvarchar2)
 as
+vac_count number;
 begin 
-  insert into Vacancy(vacancyname) values(vacName);
+select count(*) into vac_count from vacancy where vacname =vacancy.vacancyname;
+if (vac_count =0) then
+ insert into Vacancy(vacancyname) values(vacName);
+ commit;
+else raise_application_error(-20000, 'vacancy exist');
+end if;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
@@ -50,11 +55,16 @@ when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end showAllVacancy;
 
-procedure addEmp(fullName nvarchar2, Id_vac  number, PassportSeria nvarchar2, PassportNumber nvarchar2,  Adress nvarchar2,  PhoneNumber nvarchar2, StartWorkDate date, Login nvarchar2, Passw nvarchar2)
+procedure addEmp(fullName nvarchar2, Id_vac  number, PSeria nvarchar2, PNumber nvarchar2,  Adress nvarchar2,  PhoneN nvarchar2, StartWorkDate date, Logi nvarchar2, Passw nvarchar2)
 as
+empl_count number;
 begin 
-  insert into Employee(fullname, id_vac, passportseria,passportnumber,adress,phonenumber,startworkdate, login, passw) values(fullName, Id_vac, PassportSeria, PassportNumber,  Adress,  PhoneNumber, StartWorkDate, Login, encryption_password(Passw)); 
-  commit;
+select count(*) into empl_count from employee where PNumber = employee.passportnumber and Logi = employee.login and PhoneN= employee.phonenumber; 
+if (empl_count =0) then
+insert into Employee(fullname, id_vac, passportseria, passportnumber, adress, phonenumber, startworkdate, login, passw) values(fullName, Id_vac, PSeria, PNumber,  Adress,  PhoneN, StartWorkDate, Logi, encryption_password(Passw)); 
+ commit;
+else raise_application_error(-20000, 'account already exist');
+end if;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
@@ -75,8 +85,8 @@ end showAllEmp;
 procedure addStatus(stName nvarchar2)
 as
 begin
-  insert into OrderStatus(StatusName) values(stName);
-  commit;
+insert into OrderStatus(StatusName) values(stName);
+commit;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
@@ -94,21 +104,21 @@ when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 end showAllOrderStatus;
 
-PROCEDURE GET (ConscriptsOut OUT sys_refcursor)
+procedure get (ConscriptsOut out sys_refcursor)
 as
-BEGIN
-OPEN ConscriptsOut FOR 
-SELECT  id_client, fullname, adress,phonenumber FROM  Client; 
-end GET;
+begin
+open ConscriptsOut for
+select  id_client, fullname, adress,phonenumber from Client; 
+end get;
 
 procedure importXmlDataFromComponents
-IS
-BEGIN
-INSERT INTO shopofcomponents (comname, price)
-SELECT ExtractValue(VALUE(components), '//NAME') AS comname,
-       ExtractValue(VALUE(components), '//PRICE') AS price
-FROM TABLE(XMLSequence(EXTRACT(XMLTYPE(bfilename('DIR', 'components_import.xml'),
-           nls_charset_id('UTF-8')),'/ROWSET/ROW'))) components;
+is
+begin
+insert into shopofcomponents (comname, price)
+select ExtractValue(value(components), '//NAME') as comname,
+       ExtractValue(value(components), '//PRICE') as price
+from table(XMLSequence(extract(xmltype(bfilename('DIR', 'components_import.xml'),
+             nls_charset_id('UTF-8')),'/ROWSET/ROW'))) components;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
@@ -119,9 +129,9 @@ is
 rc sys_refcursor;
 doc DBMS_XMLDOM.DOMDocument;
 begin
-OPEN rc FOR 
-SELECT id_client,fullname,adress,phonenumber,login,passw FROM client;
-doc := DBMS_XMLDOM.NewDOMDocument(XMLTYPE(rc));
+open rc for
+select id_client,fullname,adress,phonenumber,login,passw from client;
+doc := DBMS_XMLDOM.NewDOMDocument(xmltype(rc));
 DBMS_XMLDOM.WRITETOFILE(doc, 'DIR/client_export.xml');
 commit;
 exception
@@ -131,9 +141,14 @@ end exportXmlToClients;
 
 procedure addComponents(componname nvarchar2, compcost number)
 as
+comp number;
 begin 
-insert into ShopOfComponents (ComName, Price) values(componname, compcost);
-commit;
+select count(*) into comp from shopofcomponents where componname= shopofcomponents.comname;
+if ( comp =0) then
+ insert into ShopOfComponents (ComName, Price) values(componname, compcost);
+ commit;
+else raise_application_error(-20000, 'component already exsist');
+end if;
 exception
 when others then
 raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
@@ -144,7 +159,7 @@ is
 begin
 for i in 1 .. 100000 
   loop
-    cwAdmin.addComponents('ComName', i);
+    cwAdmin.addComponents(i, i);
   end loop;
 commit;
 exception
@@ -154,30 +169,56 @@ end insert_100k_components;
 
 end cwAdmin;
 
+------triggers---------------------
+create or replace trigger client_befor_insert
+before insert on client
+for each row
+begin 
+dbms_output.put_line('NEW CLIENT!!!');
+end;
+
+create or replace trigger empl_befor_insert
+before insert on employee
+for each row
+begin 
+dbms_output.put_line('NEW EMPLOYEE!!!');
+end;
+
+create or replace trigger ChangeStatusOfOrder
+after insert or update of id_status on COrder
+for each row
+begin 
+case
+ WHEN INSERTING THEN
+   DBMS_OUTPUT.PUT_LINE('Inserting order: '||'new.id_order = '||:new.id_or||'new.id_status = '||:new.id_status);
+ WHEN UPDATING('id_status') THEN
+   DBMS_OUTPUT.PUT_LINE('Updating status of order '||'old status = '||:old.id_status||' new status = '||:new.id_status);
+end case;
+end;
+
 --------check----------------------
 SET SERVEROUTPUT ON;
 
 begin
 cwAdmin.showallclients;
 cwAdmin.showallvacancy;
-cwAdmin.addemp('Katty Katty', 2,'2827829M823181', 'HB988981218','Yakuba Kolasa 122','+37626722148', '3.12.2003', 'Kat','Katty');
 cwAdmin.showallemp; 
 cwAdmin.showallorderstatus;
 end;
 
-DECLARE
- C_EMP SYS_REFCURSOR;
- TYPE new_type IS RECORD(id_client number, fullname nvarchar2(150), adress nvarchar2(150),phonenumber nvarchar2(140));
- L_REC new_type; 
-BEGIN
-cwAdmin.GET(C_EMP);
-  LOOP
-    FETCH c_emp INTO l_rec;
-    EXIT WHEN c_emp%NOTFOUND;
-    dbms_output.put_line(l_rec.id_client|| ' ' ||l_rec. fullname|| ' ' ||l_rec.adress|| ' ' ||l_rec.phonenumber );
-  END LOOP;
-CLOSE c_emp;
-END;
+declare
+rf sys_refcursor;
+type cl is record(id_client number, fullname nvarchar2(150), adress nvarchar2(150),phonenumber nvarchar2(140));
+rec cl; 
+begin
+cwAdmin.get(rf);
+  loop
+    fetch rf into rec;
+    exit when rf%notfound;
+    dbms_output.put_line(rec.id_client|| ' ' ||rec. fullname|| ' ' ||rec.adress|| ' ' ||rec.phonenumber );
+  end loop;
+close rf;
+end;
 
 begin
 cwAdmin.importXmlDataFromComponents;
@@ -215,12 +256,12 @@ cwAdmin.addComponents('ram',1600);
 end;
 
 begin
-cwAdmin.addemp('Katty Katty Katyy', 2,'2827829M823181', 'HB988981218','Yakuba Kolasa 122','+37626722148', '3.12.2003', 'Katty','Katty');
-cwAdmin.addemp('Сятковская Екатерина Дмитриевна',1,'MB55555','PBD55A54','Прушинских-4','80297631738','20-09-2022','Ks7631738','Ks7631738');
+cwAdmin.addemp('Katty Katty Katyy', 2, '2827829M823181', 'HB988981218', 'Yakuba Kolasa 122', '37626722148', '3.12.2003', 'Katty', 'Katty');
+cwAdmin.addemp('Сятковская Екатерина Дмитриевна', 1, 'p823181', 'PBD55A54', 'Прушинских-4', '80297631738', '20-09-2022', 'Ks7631738', 'Ks7631738');
 end;
 
 ---create dir for export--------------------
-CREATE OR REPLACE DIRECTORY  DIR AS 'C:\XML';
+create or replace directory  DIR as 'C:\XML';
 select directory_name from all_directories where directory_path = 'C:\XML';
 
 -------users---------------------------
@@ -242,14 +283,13 @@ grant RLEmpl to C##Employee;
 drop user C##Client cascade;
 drop user C##Employee cascade;
 --select * from all_users;
+
 -------plan--------------------------
-EXPLAIN PLAN FOR select * from shopofcomponents;
-SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY());
+explain plan for select Id_com, comname, price  from ShopOfComponents order by id_com;
+select * from table(DBMS_XPLAN.DISPLAY());
 
 -------encrypt---------------
-CREATE OR REPLACE FUNCTION encryption_password
-(emp_passw IN employee.passw%TYPE)
-RETURN employee.passw%TYPE
+CREATE OR REPLACE FUNCTION encryption_password(emp_passw IN employee.passw%TYPE) RETURN employee.passw%TYPE
 IS
 l_key VARCHAR2(2000) := '0710196810121972';
 l_in_val VARCHAR2(2000) := emp_passw;
@@ -260,9 +300,7 @@ l_enc := DBMS_CRYPTO.encrypt(utl_i18n.string_to_raw(l_in_val, 'AL32UTF8'), l_mod
 RETURN RAWTOHEX(l_enc);
 END encryption_password;
 
-CREATE OR REPLACE FUNCTION decryption_password
-(emp_passw IN employee.passw%TYPE)
-RETURN employee.passw%TYPE
+CREATE OR REPLACE FUNCTION decryption_password(emp_passw IN employee.passw%TYPE) RETURN employee.passw%TYPE
 IS
 l_key VARCHAR2(2000) := '0710196810121972';
 l_in_val RAW(2000) := HEXTORAW(emp_passw);

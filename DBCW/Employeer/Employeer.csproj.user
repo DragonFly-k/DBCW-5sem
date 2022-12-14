@@ -7,13 +7,5 @@
     <Compile Update="EForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="EmployeeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="EmployeeForm.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

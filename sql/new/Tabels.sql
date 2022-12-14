@@ -4,14 +4,14 @@ create table Client
   CONSTRAINT Client_pk PRIMARY KEY (Id_Client),
   FullName nvarchar2(50) not null,
   Adress nvarchar2(200) not null,
-  PhoneNumber nvarchar2(40) not null,
+  PhoneNumber nvarchar2(40) not null UNIQUE,
   Login nvarchar2(150 ) not null UNIQUE,
   Passw nvarchar2(150) not null
 );
 create table Vacancy
 (
   Id_vac NUMBER GENERATED ALWAYS AS IDENTITY,
-  VacancyName nvarchar2(200) not null,
+  VacancyName nvarchar2(200) not null UNIQUE,
   CONSTRAINT Vac_pk PRIMARY KEY (Id_vac)
 );
 create table Employee
@@ -22,9 +22,9 @@ create table Employee
   Id_vac number not null,
   CONSTRAINT fk_Id_vac FOREIGN KEY (Id_vac) REFERENCES Vacancy(Id_vac),
   PassportSeria nvarchar2(60) not null,
-  PassportNumber nvarchar2(60) not null,
+  PassportNumber nvarchar2(60) not null UNIQUE,
   Adress nvarchar2(200) not null,
-  PhoneNumber nvarchar2(40) not null,
+  PhoneNumber nvarchar2(40) not null UNIQUE,
   StartWorkDate DATE,
   Login nvarchar2(150) not null UNIQUE,
   Passw nvarchar2(150) not null
@@ -57,7 +57,7 @@ create table ShopOfComponents
 (
   Id_Com NUMBER GENERATED ALWAYS AS IDENTITY,
   CONSTRAINT Com_pk PRIMARY KEY (Id_Com),
-  ComName nvarchar2(200) not null,
+  ComName nvarchar2(200) not null UNIQUE,
   Price number not null  
 );
 create table COrder
@@ -88,18 +88,21 @@ select * from client;
 select * from employee;
 select * from vacancy;
 select * from orderstatus;
-select * from equipment; 
-select * from makers;          
+select * from equipment;  
+select * from makers;       
 select * from shopofcomponents;
 select * from componentsorder;  
-select * from corder;
+select * from corder;       
 
---drop table COrder;
---drop table ComponentsOrder;
---drop table ShopOfComponents;
---drop table Makers;
---drop table Equipment;
---drop table OrderStatus;
---drop table Employee;
---drop table Vacancy;
---drop table Client;
+create index shopofcomp_idx on ShopOfComponents (id_com, comname, price);
+drop index shopofcomp_idx;
+
+drop table COrder;
+drop table ComponentsOrder;
+drop table ShopOfComponents;
+drop table Makers;
+drop table Equipment;
+drop table OrderStatus;
+drop table Employee;
+drop table Vacancy;
+drop table Client;

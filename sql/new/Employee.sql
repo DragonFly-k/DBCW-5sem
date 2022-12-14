@@ -200,12 +200,12 @@ cwEmpl.getClientOrdersForEmployeeToDo(1, cur);
 end;
 
 begin 
-cwEmpl.changeOrderStatus(1);
+cwEmpl.changeOrderStatus(4);
 end;
 
 declare 
 cur sys_refcursor;
-   TYPE zz1  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), Description nvarchar2(150), statusname nvarchar2(150), Fullname nvarchar2(150));  -- обязательно надо определить, куда фетчим, это самый скользкий момент
+   TYPE zz1  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), Description nvarchar2(150), statusname nvarchar2(150), Fullname nvarchar2(150)); 
    zz zz1;
 begin
 cwEmpl.getClientOrdersForEmployee(2, cur);
@@ -231,22 +231,22 @@ dbms_output.put_line('Last Id Maker: ' ||n);
 end;
 
 begin 
-cwEmpl.changeStatusAndMakers(1,1);
+cwEmpl.changeStatusAndMakers(5,1);
 end;
 
 declare cur sys_refcursor;
-TYPE zz1  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), Description nvarchar2(150), statusname nvarchar2(150), Fullname nvarchar2(150),typeofrepair   nvarchar2(150), COSTS number, comname nvarchar2(150));  -- обязательно надо определить, куда фетчим, это самый скользкий момент
+TYPE zz1  IS RECORD(id_or number, orderdate date, ename nvarchar2(150), Description nvarchar2(150), statusname nvarchar2(150), Fullname nvarchar2(150),typeofrepair   nvarchar2(150), COSTS number, comname nvarchar2(150));
    zz zz1;
 begin
 cwEmpl.getOrdersHistoryForEmployee(1, cur);
-     loop
-      fetch cur into zz;
-      EXIT when cur%notfound;
-       dbms_output.put_line('Id order: ' || zz.id_or ||' Дата Заказа: ' || zz.orderdate|| ' Наименование оборудования: ' || zz.ename || ' Имя исполнителя: ' ||zz.FULLNAME || ' Тип ремонта: ' || zz.typeofrepair || ' Статус заказа: ' || zz.statusname|| ' Описание поломки: ' || zz.Description || ' Стоимость: ' || zz.COSTS || ' Наименование детали: ' || zz.comname);
-    end loop;
-  if cur%isopen then
-       close cur;
-    end if;      
+ loop
+  fetch cur into zz;
+  EXIT when cur%notfound;
+  dbms_output.put_line('Id order: ' || zz.id_or ||' Дата Заказа: ' || zz.orderdate|| ' Наименование оборудования: ' || zz.ename || ' Имя исполнителя: ' ||zz.FULLNAME || ' Тип ремонта: ' || zz.typeofrepair || ' Статус заказа: ' || zz.statusname|| ' Описание поломки: ' || zz.Description || ' Стоимость: ' || zz.COSTS || ' Наименование детали: ' || zz.comname);
+ end loop;
+if cur%isopen  
+ then close cur;
+end if;      
 end;
 
 begin 

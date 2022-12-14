@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new MaterialSkin.Controls.MaterialButton();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tagPage2 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,14 +44,18 @@
             this.label1 = new MaterialSkin.Controls.MaterialLabel();
             this.UserLabel = new MaterialSkin.Controls.MaterialLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tagPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -63,8 +63,8 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tagPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(6, 67);
             this.tabControl1.Name = "tabControl1";
@@ -72,61 +72,6 @@
             this.tabControl1.Size = new System.Drawing.Size(1049, 485);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.dataGridView3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1041, 452);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Заказы для обработки";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(631, 393);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 20);
-            this.label3.TabIndex = 2;
-            // 
-            // button3
-            // 
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.button3.Depth = 0;
-            this.button3.HighEmphasis = true;
-            this.button3.Icon = null;
-            this.button3.Location = new System.Drawing.Point(413, 384);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.button3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.button3.Name = "button3";
-            this.button3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.button3.Size = new System.Drawing.Size(202, 36);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Добавить в обработку";
-            this.button3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.button3.UseAccentColor = false;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.Lavender;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 29;
-            this.dataGridView3.Size = new System.Drawing.Size(1035, 351);
-            this.dataGridView3.TabIndex = 0;
             // 
             // tagPage2
             // 
@@ -146,7 +91,7 @@
             this.tagPage2.Name = "tagPage2";
             this.tagPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tagPage2.Size = new System.Drawing.Size(1041, 452);
-            this.tagPage2.TabIndex = 1;
+            this.tagPage2.TabIndex = 0;
             this.tagPage2.Text = "Текущие заказы";
             this.tagPage2.UseVisualStyleBackColor = true;
             // 
@@ -161,9 +106,12 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownHeight = 150;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
             this.comboBox1.Location = new System.Drawing.Point(845, 216);
+            this.comboBox1.MaxDropDownItems = 5;
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(183, 28);
             this.comboBox1.TabIndex = 12;
@@ -335,13 +283,68 @@
             this.dataGridView1.Size = new System.Drawing.Size(652, 445);
             this.dataGridView1.TabIndex = 0;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.dataGridView3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1480, 452);
+            this.tabPage1.TabIndex = 1;
+            this.tabPage1.Text = "Заказы для обработки";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(631, 393);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 20);
+            this.label3.TabIndex = 2;
+            // 
+            // button3
+            // 
+            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.button3.Depth = 0;
+            this.button3.HighEmphasis = true;
+            this.button3.Icon = null;
+            this.button3.Location = new System.Drawing.Point(413, 384);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.button3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.button3.Name = "button3";
+            this.button3.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.button3.Size = new System.Drawing.Size(202, 36);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Добавить в обработку";
+            this.button3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.button3.UseAccentColor = false;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.Lavender;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 29;
+            this.dataGridView3.Size = new System.Drawing.Size(1035, 351);
+            this.dataGridView3.TabIndex = 0;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.dataGridView2);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1041, 452);
+            this.tabPage3.Size = new System.Drawing.Size(1480, 452);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Выполненные заказы";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -358,7 +361,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(1035, 446);
+            this.dataGridView2.Size = new System.Drawing.Size(1474, 446);
             this.dataGridView2.TabIndex = 0;
             // 
             // errorProvider1
@@ -379,12 +382,12 @@
             this.Text = "IRepair";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeForm_FormClosing);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tagPage2.ResumeLayout(false);
             this.tagPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

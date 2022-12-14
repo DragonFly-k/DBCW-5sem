@@ -106,7 +106,6 @@ D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5
 D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
 D:\универ\бд\Курсовой проект\DBCW\Employeer\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.AssemblyReference.cache
-D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.EmployeeForm.resources
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.csproj.GenerateResource.cache
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.GeneratedMSBuildEditorConfig.editorconfig
 D:\универ\бд\Курсовой проект\DBCW\Employeer\obj\Debug\net5.0-windows\Employeer.AssemblyInfoInputs.cache

@@ -73,6 +73,10 @@ namespace Client
             {
                 errorProvider4.SetError(loginBox4, "Пользователь с таким логином уже есть!");
             }
+            else if (checkPhone(phNumBox3.Text) == "consists")
+            {
+                errorProvider4.SetError(phNumBox3, "Пользователь с таким номером уже есть!");
+            }
             else
             {
                 Client user = new Client()
@@ -103,6 +107,48 @@ namespace Client
                 cmd.CommandText = "sed.cwClient.getCountOfClientWithSameLogin";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("checklogin", OracleDbType.NVarchar2).Value = login;
+                cmd.Parameters.Add("results", OracleDbType.Int64).Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+
+                string ct = cmd.Parameters["results"].Value.ToString();
+                if (int.Parse(ct) > 0)
+                {
+                    return "consists";
+                }
+                else
+                {
+                    return "not consists";
+                }
+                fioBox1.Clear();
+                adressBox2.Clear();
+                phNumBox3.Clear();
+                loginBox4.Clear();
+                passwBox5.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+                MessageBox.Show(ex.StackTrace);
+            }
+            finally
+            {
+                conn.Close();
+                conn.Dispose();
+            }
+            return "not constists";
+        }
+        string checkPhone(string phoneNumber)
+        {
+            OracleConnection conn = DBUtils.GetDBConnection();
+            try
+            {
+                conn.Open();
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "sed.cwClient.getCountOfClientWithSamePhone";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("checkphone", OracleDbType.NVarchar2).Value = phoneNumber;
                 cmd.Parameters.Add("results", OracleDbType.Int64).Direction = ParameterDirection.Output;
 
                 cmd.ExecuteNonQuery();

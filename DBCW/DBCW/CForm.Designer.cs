@@ -307,7 +307,7 @@
             this.UserLabel.Depth = 0;
             this.UserLabel.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.UserLabel.ForeColor = System.Drawing.Color.Indigo;
-            this.UserLabel.Location = new System.Drawing.Point(638, 37);
+            this.UserLabel.Location = new System.Drawing.Point(561, 37);
             this.UserLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.UserLabel.Name = "UserLabel";
             this.UserLabel.Size = new System.Drawing.Size(108, 19);
@@ -318,7 +318,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Depth = 0;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(388, 37);
             this.label1.MouseState = MaterialSkin.MouseState.HOVER;
