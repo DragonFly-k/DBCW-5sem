@@ -39,7 +39,7 @@ namespace Client
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string patern = @"^(375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$";
+            string patern = @"^(80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$";
             registered.Visible = false;
             if (String.IsNullOrEmpty(fioBox1.Text))
             {
@@ -59,7 +59,7 @@ namespace Client
             }
             else if (!Regex.IsMatch(phNumBox3.Text, patern, RegexOptions.IgnoreCase))
             {
-                errorProvider4.SetError(phNumBox3, "Неверный формат номера телефона 80(xx)ххххххх или 375(xx)ххххххх");
+                errorProvider4.SetError(phNumBox3, "Неверный формат номера телефона 80(xx)ххххххх");
             }
             else if (String.IsNullOrEmpty(loginBox4.Text))
             {

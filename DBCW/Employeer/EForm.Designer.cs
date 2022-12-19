@@ -99,7 +99,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(846, 273);
+            this.listBox1.Location = new System.Drawing.Point(853, 273);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(182, 104);
             this.listBox1.TabIndex = 13;
@@ -110,7 +110,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(845, 216);
+            this.comboBox1.Location = new System.Drawing.Point(852, 216);
             this.comboBox1.MaxDropDownItems = 5;
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(183, 28);
@@ -123,7 +123,7 @@
             this.makeOrder.Depth = 0;
             this.makeOrder.HighEmphasis = true;
             this.makeOrder.Icon = null;
-            this.makeOrder.Location = new System.Drawing.Point(861, 396);
+            this.makeOrder.Location = new System.Drawing.Point(868, 396);
             this.makeOrder.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.makeOrder.MouseState = MaterialSkin.MouseState.HOVER;
             this.makeOrder.Name = "makeOrder";
@@ -148,9 +148,9 @@
             this.button1.MouseState = MaterialSkin.MouseState.HOVER;
             this.button1.Name = "button1";
             this.button1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.button1.Size = new System.Drawing.Size(177, 36);
+            this.button1.Size = new System.Drawing.Size(151, 36);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Удалить из списка ";
+            this.button1.Text = "Отменить заказ";
             this.button1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.button1.UseAccentColor = false;
             this.button1.UseVisualStyleBackColor = true;
@@ -168,9 +168,9 @@
             this.button2.MouseState = MaterialSkin.MouseState.HOVER;
             this.button2.Name = "button2";
             this.button2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.button2.Size = new System.Drawing.Size(176, 36);
+            this.button2.Size = new System.Drawing.Size(183, 36);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Добавить в список";
+            this.button2.Text = "Заказать со склада";
             this.button2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.button2.UseAccentColor = false;
             this.button2.UseVisualStyleBackColor = true;
@@ -183,7 +183,7 @@
             this.priceBox2.Depth = 0;
             this.priceBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.priceBox2.LeadingIcon = null;
-            this.priceBox2.Location = new System.Drawing.Point(846, 137);
+            this.priceBox2.Location = new System.Drawing.Point(853, 137);
             this.priceBox2.MaxLength = 50;
             this.priceBox2.MouseState = MaterialSkin.MouseState.OUT;
             this.priceBox2.Multiline = false;
@@ -202,7 +202,7 @@
             this.repairBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.repairBox1.HideSelection = true;
             this.repairBox1.LeadingIcon = null;
-            this.repairBox1.Location = new System.Drawing.Point(846, 58);
+            this.repairBox1.Location = new System.Drawing.Point(853, 58);
             this.repairBox1.MaxLength = 32767;
             this.repairBox1.MouseState = MaterialSkin.MouseState.OUT;
             this.repairBox1.Name = "repairBox1";
@@ -291,7 +291,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1480, 452);
+            this.tabPage1.Size = new System.Drawing.Size(1041, 452);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "Заказы для обработки";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -344,7 +344,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1480, 452);
+            this.tabPage3.Size = new System.Drawing.Size(1041, 452);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Выполненные заказы";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -361,7 +361,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(1474, 446);
+            this.dataGridView2.Size = new System.Drawing.Size(1035, 446);
             this.dataGridView2.TabIndex = 0;
             // 
             // errorProvider1
@@ -372,12 +372,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 550);
+            this.ClientSize = new System.Drawing.Size(1060, 550);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1055, 550);
-            this.MinimumSize = new System.Drawing.Size(1055, 550);
+            this.MaximumSize = new System.Drawing.Size(1060, 550);
+            this.MinimumSize = new System.Drawing.Size(1060, 550);
             this.Name = "EForm";
             this.Text = "IRepair";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeForm_FormClosing);

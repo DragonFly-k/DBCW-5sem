@@ -244,6 +244,7 @@ namespace Client
         }
         private void ClientForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
             Application.Exit();
         }
         private void button2_Click_1(object sender, EventArgs e)
